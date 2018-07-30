@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <!--Required fields include the title of the article and the name of the section that it belongs to.-->
+    <!--If available, author name and date published should be included.-->
+
+    <TextView
+        android:id="@+id/article_title"
+        style="@style/titleText"
+        tools:text="Article Title" />
+
+    <TextView
+        android:id="@+id/author_name"
+        style="@style/shortText"
+        tools:text="Author Name" />
+
+    <TextView
+        android:id="@+id/article_section"
+        style="@style/shortText"
+        android:layout_gravity="end"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        tools:text="Article Section" />
+
+    <TextView
+        android:id="@+id/published_date"
+        style="@style/shortText"
+        android:layout_gravity="end"
+        tools:text="Published Date" />
+</LinearLayout>
